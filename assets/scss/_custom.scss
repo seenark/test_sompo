@@ -1,0 +1,100 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+$gray-300: #dee2e6;
+$red-primary: #cc0022;
+$red-secondary: #eb4545;
+
+// cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+// text
+
+.font-sm {
+  font-size: 0.8rem;
+}
+
+.font-lg {
+  font-size: 1.2rem;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+/* shift icon */
+.shift-up {
+  transform: translate(0, -8px);
+}
+
+.shift-down {
+  transform: translate(0, 8px);
+}
+
+.text-center-of-line {
+  transform: translate(0, 0.5em);
+}
+
+// border
+.rounded-1 {
+  border-radius: 0.25rem;
+}
+
+.rounded-2 {
+  border-radius: 0.5rem;
+}
+
+.rounded-3 {
+  border-radius: 0.75rem;
+}
+.border-dash {
+  border-style: dashed !important;
+}
+
+.border-1 {
+  border: 1px solid $gray-300;
+}
+
+.border-red {
+  border-color: $red-secondary;
+}
+
+.border-red-focus:focus {
+  border-color: $red-secondary;
+}
+
+.border-gray {
+  border-color: $gray-300;
+}
+
+// btn
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.8 !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: white !important;
+}
+
+.limit-charactor {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.modal-dialog,
+.modal-xl {
+  max-width: 90vw !important;
+  @media (min-width: 992px) {
+    max-width: 90vw !important;
+  }
+  @media (min-width: 1400px) {
+    max-width: 80vw !important;
+  }
+}
